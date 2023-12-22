@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario com data de Aniversario</title>
+</head>
+
+
+<body>
+    
+    <section class="formulario">
+        <form action="#" method="post">
+            <label for="nome">Nome da Pessoa:</label>
+            <input maxlength="120" minlength="3" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Digite apenas letras" type="text" id="formulario__nome" name="nome" required>
+    
+            <label for="data">Data de nascimento:</label>
+            <input type="text" id="formulario__data" name="data" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}" title="Digite uma data válida no formato DD/MM/AAAA" required>
+            
+            <div class="formulario__btn">
+            <Button class="formulario__btn__salvar">Salvar</Button>
+            </div>
+        </form>
+    </section>
+
+    <section class = "dados">
+        <table class="dados__tabela">
+        <tr class = 'dados__titulo'>
+            <th>Nome</th>
+            <th>Data de nascimento</th>
+            <th>Ação</th>
+          </tr>
+    </table>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

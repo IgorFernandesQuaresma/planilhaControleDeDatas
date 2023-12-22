@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.formulario form {
+    display: inline-block;
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    margin: 10px 0;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.formulario__btn__salvar {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px 5px; 
+}
+
+.formulario__btn__salvar:hover {
+    background-color: #45a049;
+}
+
+.formulario__btn {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.dados__tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .dados__titulo th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .dados__tabela td,
+  .dados__tabela th {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .dados__tabela__nome {
+    font-weight: bold;
+  }
+  
+  .dados__tabela__acao a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .dados__tabela__acao a.edit {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .dados__tabela__acao a.remove {
+    background-color: #f44336;
+    color: white;
+  }
+  
+.edit:hover {
+    color: #0aff16;
+}
+
+.remove:hover {
+    color: rgb(189, 27, 27);
+}
+
